@@ -1,0 +1,14 @@
+<footer class = 'footer'>
+  <div class = 'footer_inner wrap pale'>
+    <p>&copy;&nbsp;<span class = 'year'></span>&nbsp;{{ .Site.Title }}.
+    {{ i18n "blog_by" .Site.Data.designer | safeHTML }}</p>
+    <p><a href = 'https://www.instagram.com/cook_n_bake_kalyani/?hl=en'><i class="fa fa-instagram" style="font-size:36px"></i></a>&nbsp;
+      <a href = 'https://www.instagram.com/cook_n_bake_kalyani/?hl=en'><i class="fa fa-facebook" style="font-size:36px"></i></a>&nbsp;
+      <a href = 'https://www.instagram.com/cook_n_bake_kalyani/?hl=en'><i class="fa fa-twitter" style="font-size:36px"></i></a>&nbsp;
+      <a href = 'https://www.instagram.com/cook_n_bake_kalyani/?hl=en'><i class="fa fa-pinterest" style="font-size:36px"></i></a>&nbsp;
+      <a href = 'https://www.instagram.com/cook_n_bake_kalyani/?hl=en'><i class="fa fa-envelope" style="font-size:36px"></i></a></p>
+  </div>
+</footer>
+{{- $mainScriptPath := "js/index.js" }}
+{{- $scripts := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
+<script src = '{{ $scripts.Permalink }}'></script>

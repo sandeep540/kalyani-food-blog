@@ -1,0 +1,43 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Home"
+theme = "hugo-swift-theme"
+canonifyurls = true
+paginate = 6
+
+
+[params]
+# ga_analytics = "" # google analytics ID e.g UA-116386578-1
+# ga_verify = "" # google verification code e.g 5jb-rxeBfITeJQKOuUss3ud6FPGTxXkCho-ZN5qlrZg
+twitter = "@knsandeep"
+# logo = "logo.png"
+author = "Kalyani"
+image = "placeholder-image.jpg"
+blogDir = "post"
+# [params.staticman]
+#   endpoint = ""  # URL of your own API deployment (without trailing slash), default: "https://staticman-frama.herokuapp.com"
+#   gitProvider = "github"  # Either "github" or "gitlab"
+#   username = "username"  # GitHub/GitLab user name
+#   repository = "repo"  # GitHub/GitLab user name
+#   branch = "master"  # Branch holding the source code for your site, should match the `branch` parameter in `staticman.yml`
+
+## Social links
+[[params.socialIcons]]
+icon = "fa-linkedin"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/lxndrblz/anatole/"
+
+[[params.socialIcons]]
+icon = "fa-instagram"
+title = "instagram"
+url = "https://www.instagram.com/"
+
+[[params.socialIcons]]
+icon = "fa-envelope"
+title = "e-mail"
+url = "mailto:mail@alexbilz.com"
