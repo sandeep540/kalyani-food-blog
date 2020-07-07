@@ -7,7 +7,7 @@ paginate = 6
 
 
 [params]
-# ga_analytics = "" # google analytics ID e.g UA-116386578-1
+# ga_analytics = "UA-29480186-1" # google analytics ID e.g UA-116386578-1
 # ga_verify = "" # google verification code e.g 5jb-rxeBfITeJQKOuUss3ud6FPGTxXkCho-ZN5qlrZg
 twitter = "@knsandeep"
 # logo = "logo.png"
@@ -15,7 +15,7 @@ author = "Kalyani"
 image = "placeholder-image.jpg"
 blogDir = "post"
 # [params.staticman]
-#   endpoint = ""  # URL of your own API deployment (without trailing slash), default: "https://staticman-frama.herokuapp.com"
+endpoint = "https://kalyani-cook-n-bake.web.app/"  # URL of your own API deployment (without trailing slash), default: "https://staticman-frama.herokuapp.com"
 #   gitProvider = "github"  # Either "github" or "gitlab"
 #   username = "username"  # GitHub/GitLab user name
 #   repository = "repo"  # GitHub/GitLab user name

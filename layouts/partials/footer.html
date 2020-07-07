@@ -12,3 +12,27 @@
 {{- $mainScriptPath := "js/index.js" }}
 {{- $scripts := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
 <script src = '{{ $scripts.Permalink }}'></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAeHe8MeFbnv6EdrM7_pecVHQqoKtS46gg",
+    authDomain: "kalyani-cook-n-bake.firebaseapp.com",
+    databaseURL: "https://kalyani-cook-n-bake.firebaseio.com",
+    projectId: "kalyani-cook-n-bake",
+    storageBucket: "kalyani-cook-n-bake.appspot.com",
+    messagingSenderId: "738718492133",
+    appId: "1:738718492133:web:8cd57fd6baed2f30983b0c",
+    measurementId: "G-EXVM8LREPY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
